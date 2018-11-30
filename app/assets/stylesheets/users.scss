@@ -1,0 +1,31 @@
+// 新規登録フォーム,ログインフォーム
+.new_user{
+  background-color: white;
+  width: 700px;
+  border:ridge 1px #282923;
+  margin: auto;
+  border-radius: 5px;
+  height: 100%;
+
+  .field{
+    text-align: center;
+    margin-bottom: 30px;
+    #user_nickname,#user_email,#user_password,#user_password_confirmation{
+      height: 40px;
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 400px;
+      margin: auto;
+    }
+  }
+  .actions{
+    margin-left: 300px;
+    margin-bottom: 20px;
+    input{
+      padding: 20px 40px;
+    }
+
+
+  }
+}
+

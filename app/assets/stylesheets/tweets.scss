@@ -1,0 +1,145 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#navbar{
+  position: fixed;
+}
+
+#title{
+  margin-left: 20px;
+}
+
+
+.contents {
+  height: 100%;
+  min-height: 100vh;
+  background-image: url(https://naturobo.com/wp-content/uploads/2017/06/KAZTDSCF7026_TP_V.jpg);
+  background-color: green;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top:150px;
+  padding-bottom: 150px;
+
+
+}
+
+
+.clear-fix:after{
+  content:"";
+  display: block;
+  clear:both;
+}
+
+
+
+
+// 閲覧部分
+.content{
+  width: 100%;
+  max-width: 660px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 20px;
+  background-color: white;
+
+  border: ridge 2px green;
+  border-radius: 6px;
+
+  .content_image{
+
+    height: 400px;
+    width: 600px;
+    margin: 20px auto 0;
+    background-size: cover;
+
+  }
+  ul{
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+  }
+  li{
+    float:right;
+    margin-right: 20px;
+
+  }
+  a{
+    border: ridge 2px green;
+    border-radius: 6px;
+    padding: 5px;
+  }
+
+  p{
+
+  }
+}
+
+
+// new投稿フォーム
+.form-new-tweet{
+  background-color: white;
+  width: 700px;
+  margin: auto;
+  padding-top: 20px;
+  height: 400px;
+
+  .new_tweet{
+    width: 600px;
+    margin-left: 100px;
+    height: 300px;
+
+    textarea,input{
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 500px;
+    }
+    textarea{
+      padding-bottom: 50px;
+      margin-bottom: 10px;
+    }
+    .btn-sent{
+      padding: 10px 0 10px;
+    }
+  }
+}
+
+// new投稿フォーム
+
+.form-edit{
+  background-color: white;
+  width: 700px;
+  border:ridge 1px #282923;
+  margin: auto;
+  height: 370px;
+
+  .edit_tweet{
+    margin-left: 100px;
+    height: 300px;
+
+    textarea,input{
+      border: 1px solid gray;
+      border-radius: 5px;
+      width: 500px;
+    }
+    textarea{
+      padding-bottom: 50px;
+      margin-bottom: 10px;
+    }
+    .btn-sent{
+      padding: 10px 0 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+.blinking{
+  animation: fadeIn 0.8s infinite alternate;
+  color: blue;
+}
+
+
